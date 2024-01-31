@@ -25,37 +25,33 @@
     --color-0be039: #0be039;
     --color-332200: #332200;
     --color-111111: #111111;
-    --color-161616: #161616;
+    --color-161616: #161616de;
     --color-black:#000000;
 }
 /* Загальні стилі */
 a{
-    text-decoration: none;
-    font-style: normal;
+  text-decoration: none;
+  font-style: normal;
 }
 .link-focus:hover,
 .link-focus:focus{
-    color:var(--color-2c96ec);
-    transition: all 0.2s;
+  color:var(--color-2c96ec);
+  transition: all 0.2s;
 }
 body{
-    background: var(--color-F5F5F5);
+  background: var(--color-F5F5F5);
 }
 .main-page{
   width: 100%;
   max-width: 1620px;
   font-family: var(--font-roboto);
   margin: 0 auto;
-  background: #2c96ec;
 }
 
 /* Шапка */
 .header{
   width: 100%;
   background: var(--color-161616);
-  border-radius: 0 0 0 35px;
-  border-bottom: 5px solid var(--color-FFBB00);
-  border-left: 5px solid var(--color-FFBB00);
   box-sizing: border-box;
 }
 .header-nav{
@@ -66,7 +62,7 @@ body{
   align-items: center;
 }
 .logo{
-  width:80px;
+  width:50px;
   border-radius: 10px;
   overflow: hidden;
   margin-top: 1px;
@@ -76,152 +72,64 @@ body{
   width: 100%;
   display: block;
 }
-.nav-items{
-  display: flex;
-  align-items: center;
-}
-.nav-items li{
-  margin: 5px;
-}
-.nav-items a{
-  font-weight: var(--font-weight-700);
-  font-size: 2.5rem;
-  color: var(--color-CCCCCC);
-  padding: 3px;
-}
 
-/* Кнопка вибору */
-.dropbtn {
-  background: none;
-  font-family: var(--font-roboto);
-  font-weight: var(--font-weight-700);
-  font-size: 2.5rem;
-  color: var(--color-CCCCCC);
-  padding: 5px 8px;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-.dropbtn:hover, 
-.dropbtn:focus {
-  color:var(--color-2c96ec);
-}
-.dropdown {
-  /* position: relative; */
-  display: inline-block;
-  width: 90%;
-  text-align: end;
-}
-.dropdown-content {
-    display: none;
-    position: fixed;
-    background: #161616cc;
-    width: 100%;
-    height: 50vh;
-    top: 0;
-    left: 0;
-    border-radius: 10px;
-    
-    /* margin-top: 8px; */
-    padding: 35px 20px 5px 10px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-.dropdown-content a {
-    font-weight: var(--font-weight-700);
-    font-size: 1.8rem;
-    color: var(--color-CCCCCC);
-    padding: 3px;
-    display: block;
-    margin: 5px;
-}
-.show {
-    display: block;
-    text-align:start;
-}
+
 /* Головний контент */
 .main h1{
-    font-weight: var(--font-weight-700);
-    font-size: 3.5rem;
-    text-align: center;
-    margin-bottom: 10px;
-}
-.works h2{
-    font-weight: var(--font-weight-700);
-    font-size: 2.5rem;
-    margin: 15px;
-}
-.works > p{
-    font-weight: var(--font-weight-500);
-    font-size: 1.8rem;
-    margin: 20px;
-    line-height: 1.2;
-}
-
-/* Секція 1 */
-.work-1{
-    padding: 20px;
-    border-radius: 0 0 35px 0;
-    border-right: 5px solid var(--color-FFBB00);
-    border-bottom: 5px solid var(--color-FFBB00);
-}
-.work-2{
-  width: 80%;
-  background-color: tan;
-  border-radius: 20px;
-  margin: 20px auto;
-  padding: 20px;
-}
-.work-2 > p{
-    font-weight: var(--font-weight-500);
-    font-size: 1.8rem;
-    margin: 20px;
-    line-height: 1.2;
+  font-weight: var(--font-weight-700);
+  font-size: 3rem;
+  text-align: center;
+  margin: 10px;
 }
 
 /* Стилі калькулятора */
-.box {
-background-color: #3d4543;
-height: 300px;
-width: 250px;
-border-radius: 10px;
-position: relative;
-margin: 30px auto;
+.calculator {
+  background-color: #3d4543;
+  height: 300px;
+  width: 250px;
+  border-radius: 10px;
+  position: relative;
+  margin: 30px auto;
+  box-shadow:
+      inset .3rem .3rem .3rem rgba(255, 255, 255, 0.213),
+      inset -.3rem -.3rem .3rem rgba(15, 6, 1, 0.532),
+      1.2rem 1.2rem 2.4rem rgba(0, 0, 0, 0.6);
 }
   
 .display {
-background-color: #222;
-width: 225px;
-position: absolute;
-left: 12px;
-top: 20px;
-height: 40px;
+  background-color: #222;
+  width: 225px;
+  position: absolute;
+  left: 12px;
+  top: 20px;
+  height: 40px;
 }
   
 #show-display {
-    font-weight: var(--font-weight-600);
-    width: 220px;
-    position: absolute;
-    left: 2px;
-    top: 2px;
-    height: 35px;
-    color: black;
-    background-color: #bccd95;
-    font-size: 21px;
-    text-align: right;
+  font-weight: var(--font-weight-600);
+  width: 220px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  height: 35px;
+  color: black;
+  background-color: #bccd95;
+  font-size: 21px;
+  text-align: right;
 }
   
 #show-sekond-display{
-    width: 220px;
-    position: absolute;
-    left: 2px;
-    top: 2px;
-    height: 35px;
-    color: black;
-    border: none;
-    padding-left: 5px;
-    background:none;
-    font-size: 15px;
-    text-align: start;
+  width: 220px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  height: 35px;
+  color: black;
+  border: none;
+  padding-left: 5px;
+  background:none;
+  font-size: 15px;
+  text-align: start;
 }
 
 .keys {
@@ -294,7 +202,7 @@ height: 40px;
   border-bottom: #FF9933 2px solid;
 }
   
-.keys > p {
+.keys > li {
   line-height:10px;
   margin-top: 2px;
   margin-bottom: 8px;
@@ -312,7 +220,6 @@ opacity: .5 ;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-left: 5px solid var(--color-FFBB00);
 }
 .footer li{
   font-weight: var(--font-weight-700);
